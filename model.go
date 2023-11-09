@@ -1,21 +1,28 @@
 package printdoc
 
-import "github.com/jung-kurt/gofpdf"
+import (
+	"github.com/cdvelop/model"
+	"github.com/jung-kurt/gofpdf"
+)
 
 type PrintDoc struct {
-	pdf         *gofpdf.Fpdf
+	pdf *gofpdf.Fpdf
+
+	App    *model.Handlers
+	Object *model.Object
+
 	text_size   float64
 	margin_left float64
 
 	StoragePath string // ej: ./pdf_files
 
 	// static data:
-	AppName          string
-	AppVersion       string
-	BusinessName     string
-	BusinessAddress  string
-	BusinessPhone    string
-	BusinessLogoPath string //ej: ./app_files/logo.png
+	App_name           string
+	App_version        string
+	Business_name      string
+	Business_address   string
+	Business_phone     string
+	Business_logo_path string //ej: ./app_files/logo.png
 
 	//dynamic fields data:
 	StaffName          string

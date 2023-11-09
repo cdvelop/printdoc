@@ -18,7 +18,7 @@ func (p *PrintDoc) BuildPanesdoscopiaPDF() error {
 	p.pdf.AddPage()
 
 	//LOGO
-	p.pdf.ImageOptions(p.BusinessLogoPath, p.margin_left, 20, 55, 0, false, gofpdf.ImageOptions{
+	p.pdf.ImageOptions(p.Business_logo_path, p.margin_left, 20, 55, 0, false, gofpdf.ImageOptions{
 		ReadDpi: true,
 	}, 0, "")
 

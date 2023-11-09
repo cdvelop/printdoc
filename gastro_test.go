@@ -10,15 +10,15 @@ func TestBuildPanesdoscopiaPDF(t *testing.T) {
 	const test_files = "./test_files"
 
 	new := printdoc.PrintDoc{
-		StoragePath:      test_files,
-		AppName:          "test app",
-		AppVersion:       "0.0.1",
-		BusinessName:     "Negocio Test",
-		BusinessAddress:  "Calle sin nombre 5422",
-		BusinessPhone:    "55-256115",
-		BusinessLogoPath: test_files + "/logo_test.jpg",
-		StaffName:        "Dr. KARLA ACERO SeRRANO",
-		ServiceName:      "panesdoscopia",
+		StoragePath:        test_files,
+		App_name:           "test app",
+		App_version:        "0.0.1",
+		Business_name:      "Negocio Test",
+		Business_address:   "Calle sin nombre 5422",
+		Business_phone:     "55-256115",
+		Business_logo_path: test_files + "/logo_test.jpg",
+		StaffName:          "Dr. KARLA ACERO SeRRANO",
+		ServiceName:        "panesdoscopia",
 		Reason: `Referido por      : dra. coñtreras
 		Motivo               : disfagia
 		Premedicacion  : dormonid-lidocainal`,

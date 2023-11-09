@@ -15,7 +15,7 @@ func (p *PrintDoc) footerPdfDocument() {
 	// _, lineHt := pdf.GetFontSize()
 	p.pdf.MoveTo(p.margin_left, height_page-60)
 
-	info := fmt.Sprintf("Plataforma %v-%v - %v - %v - Fono: %v", p.AppName, p.AppVersion, p.BusinessName, p.BusinessAddress, p.BusinessPhone)
+	info := fmt.Sprintf("Plataforma %v-%v - %v - %v - Fono: %v", p.App_name, p.App_version, p.Business_name, p.Business_address, p.Business_phone)
 
 	tr := p.pdf.UnicodeTranslatorFromDescriptor("")
 
