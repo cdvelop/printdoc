@@ -3,7 +3,7 @@ module github.com/cdvelop/printdoc
 go 1.20
 
 require (
-	github.com/cdvelop/model v0.0.69
+	github.com/cdvelop/model v0.0.70
 	github.com/cdvelop/object v0.0.23
 	github.com/jung-kurt/gofpdf v1.16.2
 )
